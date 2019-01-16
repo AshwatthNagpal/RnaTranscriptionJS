@@ -31,7 +31,7 @@ describe('Transcriptor', () => {
       .toEqual('UGCACCAGAAUU');
   });
 
-  xtest('correctly handles invalid input', () => {
+  test('correctly handles invalid input', () => {
     expect(() => toRna('U'))
       .toThrow(new Error('Invalid input DNA.'));
   });

@@ -9,6 +9,8 @@ export const toRna = dna => {
       rna += 'U';
     } else if (dna[i] === 'T') {
       rna += 'A';
+    } else {
+      throw 'Invalid input DNA.';
     }
   }
   return rna;
