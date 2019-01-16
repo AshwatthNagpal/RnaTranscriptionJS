@@ -8,5 +8,8 @@ export const toRna = dna => {
   if (dna === 'A') {
     return 'U';
   }
+  if (dna === 'T') {
+    return 'A';
+  }
   return '';
 };
