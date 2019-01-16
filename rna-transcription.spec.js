@@ -26,7 +26,7 @@ describe('Transcriptor', () => {
       .toEqual('A');
   });
 
-  xtest('transcribes all dna nucleotides to their rna complements', () => {
+  test('transcribes all dna nucleotides to their rna complements', () => {
     expect(toRna('ACGTGGTCTTAA'))
       .toEqual('UGCACCAGAAUU');
   });

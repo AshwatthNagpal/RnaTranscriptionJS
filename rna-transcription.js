@@ -1,15 +1,15 @@
 export const toRna = dna => {
-  if (dna === 'C') {
-    return 'G';
+  let rna = '';
+  for (let i = 0; i < dna.length; i += 1) {
+    if (dna[i] === 'C') {
+      rna += 'G';
+    } else if (dna[i] === 'G') {
+      rna += 'C';
+    } else if (dna[i] === 'A') {
+      rna += 'U';
+    } else if (dna[i] === 'T') {
+      rna += 'A';
+    }
   }
-  if (dna === 'G') {
-    return 'C';
-  }
-  if (dna === 'A') {
-    return 'U';
-  }
-  if (dna === 'T') {
-    return 'A';
-  }
-  return '';
+  return rna;
 };
