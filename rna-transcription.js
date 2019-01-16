@@ -1,6 +1,9 @@
 export const toRna = dna => {
-  if (dna.toUpperCase() === 'C') {
+  if (dna === 'C') {
     return 'G';
+  }
+  if (dna === 'G') {
+    return 'C';
   }
   return '';
 };
